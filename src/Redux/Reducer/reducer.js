@@ -1,11 +1,19 @@
 import { action_type } from '../constant';
-const todo = [];
-function reducer(state = todo, { action }) {
-	switch (action.type) {
-		case ADD:
-			return [...todo, 'hello'];
+// const todo = ['newtodo'];
+var statess = [];
+export default function reducer(state = statess, { type, payload }) {
+	// console.log('action', payload, state);
+
+	switch (type) {
+		case action_type.ADD:
+			return [...state, payload];
+		case action_type.REMOVE:
+			let dt = state.filter((curr) => {
+				return curr !== payload;
+			});
+			return dt;
 
 		default:
-			state;
+			return state;
 	}
 }
