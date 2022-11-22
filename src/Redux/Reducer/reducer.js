@@ -1,8 +1,11 @@
-import { action_type } from "../constant";
-const todo=[];
-const todoReducer=(todo==initialState,{action})=>{
-    return{
-        "hello"
-    }
+import { action_type } from '../constant';
+const todo = [];
+function reducer(state = todo, { action }) {
+	switch (action.type) {
+		case ADD:
+			return [...todo, 'hello'];
 
+		default:
+			state;
+	}
 }
