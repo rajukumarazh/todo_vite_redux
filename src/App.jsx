@@ -1,6 +1,7 @@
 import React from 'react';
-
+import { useSelector } from 'react-redux';
 function App() {
+	const state = useSelector();
 	return (
 		<div className="bg-gray-100 border-2 border-collapse w-72 m-5 ">
 			{/* <h1 className="text-red-600 text-center text-lg font-medium">
