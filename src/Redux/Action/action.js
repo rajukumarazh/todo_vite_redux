@@ -18,3 +18,15 @@ export const changeStatus = (data) => {
 		payload: data,
 	};
 };
+export const completed = (data) => {
+	return {
+		type: action_type.COMPLETE,
+		payload: data,
+	};
+};
+export const uncompleted = (data) => {
+	return {
+		type: action_type.UNCOMPLETE,
+		payload: data,
+	};
+};
