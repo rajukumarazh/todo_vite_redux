@@ -12,3 +12,9 @@ export const deltodo = (data) => {
 		payload: data,
 	};
 };
+export const changeStatus = (data) => {
+	return {
+		type: action_type.STATUS,
+		payload: data,
+	};
+};

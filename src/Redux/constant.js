@@ -3,4 +3,5 @@ export const action_type = {
 	REMOVE: 'REMOVE',
 	COMPLETE: 'COMPLETE',
 	UNCOMPLETE: 'UNCOMPLETE',
+	STATUS:"STATUS"
 };
