@@ -12,7 +12,7 @@ import { BsFillTrashFill } from 'react-icons/bs';
 import { FiCheck } from 'react-icons/fi';
 function App() {
 	const states = useSelector((state) => state);
-	console.log('state', states);
+	console.log('default state ', states);
 	let dispatch = useDispatch(
 		addtodo,
 		deltodo,
